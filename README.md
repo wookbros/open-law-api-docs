@@ -1,12 +1,17 @@
 # open-law-api-docs
 
-Swagger UI documentation for the Korean Legislative Service (법제처) Open API.
+Swagger UI documentation for the [Korean Legislative Service (법제처) Open API](https://open.law.go.kr/LSO/index.html).
+
+## Live
+
+https://open-law-api-docs-wookbros.vercel.app
 
 ## Features
 
 - Interactive API documentation with Swagger UI
 - Covers all 4 endpoints: case law search/detail, legislation search/detail
-- Hosted via Vercel with automatic deployments
+- API proxy via Vercel Rewrites (resolves mixed content issue)
+- Automatic deployments on push to `main`
 
 ## API Endpoints
 
@@ -16,6 +21,8 @@ Swagger UI documentation for the Korean Legislative Service (법제처) Open API
 | `lawService.do?target=prec` | Get case law detail |
 | `lawSearch.do?target=eflaw` | Search legislation list by enforcement date |
 | `lawService.do?target=eflaw` | Get legislation detail |
+
+> Base URL: `http://www.law.go.kr/DRF/`
 
 ## Local Development
 
