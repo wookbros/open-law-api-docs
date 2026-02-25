@@ -10,7 +10,7 @@ info:
 
 servers:
   - url: /api
-    description: Vercel 프록시 (법제처 Open API)
+    description: 법제처 Open API
 
 tags:
   - name: 판례
