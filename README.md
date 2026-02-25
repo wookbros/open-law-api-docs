@@ -1,0 +1,34 @@
+# open-law-api-docs
+
+Swagger UI documentation for the Korean Legislative Service (법제처) Open API.
+
+## Features
+
+- Interactive API documentation with Swagger UI
+- Covers all 4 endpoints: case law search/detail, legislation search/detail
+- Hosted via Vercel with automatic deployments
+
+## API Endpoints
+
+| Endpoint | Description |
+|----------|-------------|
+| `lawSearch.do?target=prec` | Search case law list |
+| `lawService.do?target=prec` | Get case law detail |
+| `lawSearch.do?target=eflaw` | Search legislation list by enforcement date |
+| `lawService.do?target=eflaw` | Get legislation detail |
+
+## Local Development
+
+```bash
+npx http-server . -p 8080
+```
+
+Open `http://localhost:8080` in your browser.
+
+## Deployment
+
+Deployed via [Vercel](https://vercel.com) with automatic deployments on push to `main`.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
