@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(nslookup:*)",
+      "Bash(curl:*)",
+      "Bash(ping:*)",
+      "Bash(traceroute:*)",
+      "Bash(whois:*)",
+      "Bash(brew list --cask)",
+      "Bash(brew install:*)",
+      "Bash(open:*)",
+      "WebFetch(domain:open.law.go.kr)",
+      "WebSearch",
+      "WebFetch(domain:macromaster.dev)",
+      "Bash(code:*)"
+    ]
+  }
+}
